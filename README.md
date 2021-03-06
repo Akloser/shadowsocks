@@ -4,6 +4,10 @@ wget --no-check-certificate  https://raw.githubusercontent.com/teddysun/shadowso
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 ```
+
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/luvvien/ssr-install-shellscript/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+```
 ## 安装netstat工具
 ```
 yum install net-tools
