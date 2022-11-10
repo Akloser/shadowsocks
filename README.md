@@ -1,3 +1,32 @@
+## v2ray
+
+```
+bash <(curl -s -L https://git.io/v2ray.sh)
+```
+```
+yum install net-tools
+
+v2ray stop
+vi /etc/v2ray/config.json
+```
+在config.json添加：
+`"listen":"66.42.48.247",`
+```
+firewall-cmd --add-port=6888/tcp --permanent
+firewall-cmd --add-port=6888/udp --permanent
+firewall-cmd --reload
+firewall-cmd --list-all
+```
+协议开始使用的tcp，用了两天被封了；
+更换成kcp-wireguard，暂时用着；
+
+
+## vps服务器地址
+- new york $3.5,便宜
+- tokyo $5,用了两天被封
+- seoul， $5,ping不通
+- Singapore，$5,延迟只有91ms，暂时在用
+
 ## shadowsocks-server
 ```
 wget --no-check-certificate  https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
