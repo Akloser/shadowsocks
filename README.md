@@ -1,4 +1,9 @@
 ## v2ray
+#### 20240216更新
+```
+bash <(curl -s -L https://git.io/v2rayinstall.sh)
+```
+以上脚本自动关闭防火墙，执行后不需要执行下面的脚本！
 
 ```
 bash <(curl -s -L https://git.io/v2ray.sh)
